@@ -115,8 +115,6 @@ OtherSection:NewDropdown("Misc", "DropdownInf", {"infiniteyield", "Reset WP/JP 2
 end)
 
 OtherSection:NewButton("SpyHub", "ButtonInfo", function()
-   local owner = "Upbolt"
-local branch = "revision"
 
 local function webImport(file)
 --[[
