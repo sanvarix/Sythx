@@ -41,43 +41,6 @@ local Window = Library.CreateLib("Sythx", "Ocean")
     ScriptsSection:NewButton("Levia Hub", "Anime Fighting Simulator", function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Jaaaaay2/MahScriptHub/master/AFS%20Remastered"))()
     end)
-
-    ScriptsSection:NewButton("Infinite Chakra (Anime fighting simulator)", "ButtonInfo", function()
-        local replicated = game:GetService('ReplicatedStorage')
-    end)
-
-
-
-        coroutine.wrap(function()
-        
-          for i = 1,3000 do -- do howerver much you want
-        
-            task.spawn(function()
-        
-                replicated.RSPackage.Events.StatFunction:InvokeServer('Stat', 'Chakra')
-        
-            end)
-        
-          end
-        
-        end)()
-        
-         
-        
-        -- Customize how bad you want it to lag here
-        
-        for i = 1,1000 do
-        
-            for i = 1,1000 do
-        
-                for i = 1,10000 do
-        
-                end
-        
-            end
-        
-        end
-    end)
     
      local Other = Window:NewTab("Other")
     local OtherSection = Other:NewSection("Other")
@@ -88,16 +51,6 @@ local Window = Library.CreateLib("Sythx", "Ocean")
 
     OtherSection:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.RightControl, function()
 Library:ToggleUI()
-end)
-
-OtherSection:NewButton("Reset", "ButtonInfo", function()
-   game.Players.LocalPlayer.Character.Humanoid.Health = 0
-end)
-
-OtherSection:NewButton("Bypassed Fly", "bird mode", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Nicuse/RobloxScripts/main/BypassedFly.lua"))() 
-
-    Fly(true)
 end)
 
     ScriptsSection:NewButton("Shindo Life", "ButtonInfo", function()
