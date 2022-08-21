@@ -116,7 +116,6 @@ end)
 
 OtherSection:NewButton("SpyHub", "ButtonInfo", function()
 
-local function webImport(file)
 --[[
     SimpleSpy v2.2 SOURCE
 
