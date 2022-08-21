@@ -44,6 +44,7 @@ local Window = Library.CreateLib("Sythx", "Ocean")
 
     ScriptsSection:NewButton("Infinite Chakra (Anime fighting simulator)", "ButtonInfo", function()
         local replicated = game:GetService('ReplicatedStorage')
+    end)
 
 
 
@@ -97,21 +98,6 @@ OtherSection:NewButton("Bypassed Fly", "bird mode", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Nicuse/RobloxScripts/main/BypassedFly.lua"))() 
 
     Fly(true)
-end)
-
-OtherSection:NewSlider("Walkspeed", "SPEED!!", 500, 16, function(s)
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
-end)
-
-OtherSection:NewSlider("Jumppower", "JUMP HIGH!!", 350, 50, function(s)
-    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
-end)
-
-
-OtherSection:NewDropdown("Misc", "DropdownInf", {"infiniteyield", "Reset WP/JP 2", "Option 3"}, function(currentOption)
-    loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
-    game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
 end)
 
     ScriptsSection:NewButton("Shindo Life", "ButtonInfo", function()
